@@ -1,0 +1,2 @@
+#!/bin/bash
+magick mogrify -quality 80 -rotate 90 kevinlarmee-0_87.jpg;magick mogrify -quality 80 -rotate 90 kevinlarmee-madonna-and-child-at-beach-2016.jpg;magick mogrify -quality 80 -rotate 90 kevinlarmee-beach-right.jpg;magick mogrify -quality 80 -rotate 270 kevinlarmee-Scan_57.jpg;rm kevinlarmee-0_21.jpg
