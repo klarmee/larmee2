@@ -1,9 +1,11 @@
 #!/bin/bash
 ls >> lsOutput.log
-magick mogrify -format jpg -quality 80 *.jpg
-mkdir temp
-cp *.jpg temp
-mv *.jpg /workspaces/larmee2/o
-cd temp
-magick mogrify -resize 800 -quality 80 *.jpg
-mv *.jpg /workspaces/larmee2/800
+cd new
+magick mogrify -format jpeg -quality 80 *.jpeg
+cp *.jpeg o
+magick mogrify -resize 800 -quality 80 *.jpeg
+cp *.jpeg 800
+magick mogrify -resize 400 -quality 80 *.jpeg
+cp *.jpeg 400
+magick mogrify -resize 200 -quality 80 *.jpeg
+cp *.jpeg 200
