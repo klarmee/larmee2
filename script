@@ -1,0 +1,13 @@
+#!/bin/bash
+# ls >> lsOutput.log
+# magick mogrify -format jpeg -quality 80 *.jpeg
+cd o
+cp * ../900
+cd ../900
+magick mogrify -geometry x900 -quality 80 *
+cp * ../400
+cd ../400
+magick mogrify -geometry x400 -quality 80 *
+cp * ../200
+cd ../200
+magick mogrify -geometry x200 -quality 80 *
